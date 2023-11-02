@@ -45,6 +45,7 @@
 }
 .chat_button {
   height: 2rem;
+  color: black;
   width: 15%;
   font-size: 16px;
   margin-left: 50px;
