@@ -1,0 +1,140 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chatWindow {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://blog.1a23.com/wp-content/uploads/sites/2/2020/02/BG_N4-scaled.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.inputContainer {
+  width: 95%;
+  height: 2.5rem;
+  color: black;
+  margin-top: auto;
+  background-color: hsl(0, 14%, 91%);
+  border-radius: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.chat_input {
+  font-size: 18px;
+  width: 60%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+}
+.chat_button {
+  height: 2rem;
+  width: 15%;
+  font-size: 16px;
+  margin-left: 50px;
+  border: none;
+  background-color: transparent;
+}
+.chat__messages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+.form {
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+}
+.chatHeader {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(34, 34, 39);
+}
+.chatHeader__iconContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.chatHeader__icon {
+  font-size: 28px;
+}
+.chatHeader__iconGroup {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.chatHeader__iconGroup__right {
+  margin-right: 20px;
+}
+.chatProfileRight {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-direction: row-reverse;
+  margin-bottom: 5px;
+}
+.chatProfileLeft {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+.chatProfileSpan {
+  background-color: rgb(213, 213, 182);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.userName {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.userMessage {
+  background-color: #f9f9f9;
+  padding: 5px;
+  color: black;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.chatProfileRight .userName,
+.chatProfileRight .userMessage {
+  text-align: right;
+}
+
+.chatProfileLeft .userName,
+.chatProfileLeft .userMessage {
+  text-align: left;
+}
