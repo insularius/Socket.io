@@ -3,7 +3,11 @@ const { Server } = require("socket.io");
 const httpServer = http.createServer();
 const io = new Server(httpServer, {
   cors: {
-    origin: ["http://localhost:3000", "http://local.daru.kz:3000"],
+    origin: [
+      "http://localhost:3000",
+      "http://local.daru.kz:3000",
+      "https://socket-io-lake.vercel.app/",
+    ],
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true,
