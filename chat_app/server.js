@@ -6,7 +6,7 @@ const io = new Server(httpServer, {
     origin: [
       "http://localhost:3000",
       "http://local.daru.kz:3000",
-      "https://socket-io-git-main-insularius-projects.vercel.app",
+      "https://socket-io-lake.vercel.app",
     ],
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
