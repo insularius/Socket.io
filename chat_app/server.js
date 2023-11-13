@@ -5,6 +5,7 @@ const io = new Server(httpServer, {
   cors: {
     origin: [
       "http://localhost:3000",
+      "http://localhost:3001",
       "http://local.daru.kz:3000",
       "https://socket-io-nu-seven.vercel.app",
     ],
