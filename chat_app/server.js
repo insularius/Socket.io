@@ -5,7 +5,6 @@ const io = new Server(httpServer, {
   cors: {
     origin: [
       "http://localhost:3000",
-      "http://localhost:3001",
       "http://local.daru.kz:3000",
       "https://socket-io-nu-seven.vercel.app",
     ],
@@ -30,7 +29,7 @@ io.on("connection", (socket) => {
   });
 });
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || "https://socket-io-nu-seven.vercel.app";
 httpServer.listen(PORT, () => {
   console.log(`Socket.io server is running on port ${PORT}`);
 });
