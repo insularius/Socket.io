@@ -11,7 +11,8 @@ export default function Home() {
   const [roomId, setroomId] = useState("");
 
   var socket: Socket;
-  socket = io("http://localhost:3001");
+  // socket = io("http://localhost:3001");
+  socket = io("https://socket-io-nu-seven.vercel.app");
 
   const handleJoin = () => {
     if (userName !== "" && roomId !== "") {
