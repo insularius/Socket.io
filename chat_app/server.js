@@ -3,14 +3,15 @@ const { Server } = require("socket.io");
 const httpServer = http.createServer();
 const io = new Server(httpServer, {
   cors: {
-    origin: [
-      "http://localhost:3000",
-      "http://local.daru.kz:3000",
-      "https://socket-io-nu-seven.vercel.app",
-    ],
-    methods: ["GET", "POST"],
-    allowedHeaders: ["my-custom-header"],
-    credentials: true,
+    origin: "*",
+    // origin: [
+    //   "http://localhost:3000",
+    //   "http://local.daru.kz:3000",
+    //   "https://socket-io-nu-seven.vercel.app",
+    // ],
+    methods: ["GET", "POST", 'PUT', 'OPTIONS'],
+    // allowedHeaders: [""],
+    // credentials: true,
   },
 });
 
@@ -29,7 +30,7 @@ io.on("connection", (socket) => {
   });
 });
 
-const PORT = process.env.PORT || "https://socket-io-nu-seven.vercel.app";
+const PORT = process.env.PORT || 3001;
 httpServer.listen(PORT, () => {
   console.log(`Socket.io server is running on port ${PORT}`);
 });
